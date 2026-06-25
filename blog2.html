@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routing</title>
+</head>
+<body>
+    <h1>Basic Routing</h1>
+    <p> Routing refers to how an application responds to client requests to specific 
+    endpoints (URIs) using different HTTP methods (GET, POST, PUT, DELETE, etc.).</p>
+    <p>Express provides simple methods to 
+    define routes that correspond to HTTP methods:</p>
+            <ol>
+                <li>app.get() - Handle GET requests </li>
+                <li>app.post() - Handle POST requests</li>
+                <li>app.put() - Handle PUT requests</li>
+                <li>app.delete() - Handle DELETE requests</li>
+                <li>app.all() - Handle all HTTP methods</li>
+            </ol>
+            <h2>Middleware in Express</h2>
+            <p>Middleware functions are the backbone of Express applications.</p>
+            <p>They have access to:</p>
+            <ol>
+                <li>The request object (req)</li>
+                <li>The response object (res)</li>
+                <li>The next middleware function in the stack (next)</li>
+
+            </ol>
+            <h1>Middleware can:</h1>
+         <ol>
+          <li>Execute any code</li> 
+          <li>Modify request and response objects</li> 
+          <li>End the request-response cycle</li>
+          <li>Call the next middleware in the stack</li>
+         </ol>
+</body>
+</html>
